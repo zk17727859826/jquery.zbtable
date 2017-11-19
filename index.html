@@ -16,22 +16,87 @@
 		<script type="text/javascript" src="js/jquery.zbtable.js"></script>
 		<script type="text/javascript">
 			$("#tblTemp").zbtable({
+				fixedrow: true,
+				fixedcolumn: 2,
+				height: 300,
+				//width: 250,
+				wrapperborder: true,
+				shownum: true,
+				pagesize: 13,
+				showpagin: true,
+				//urlpagin: true,
+				url: 'data/data1.json',
 				data: [{
 					name: '張三',
-					sex: '男'
+					sex: '男',
+					tel: '13564859621',
+					mobile: '13564859621'
 				}, {
 					name: '李四',
+					sex: '女',
+					tel: '13564859621',
+					mobile: '13564859621'
+				}, {
+					name: '王二',
+					sex: '男'
+				}, {
+					name: '周七',
+					sex: '女'
+				}, {
+					name: '李四维',
+					sex: '女'
+				}, {
+					name: '张利军',
+					sex: '男'
+				}, {
+					name: '季四本',
+					sex: '女'
+				}, {
+					name: '成龙',
+					sex: '女'
+				}, {
+					name: '王成利',
+					sex: '女'
+				}, {
+					name: '李军',
+					sex: '女'
+				}, {
+					name: '何成四',
+					sex: '女'
+				}, {
+					name: '万陆',
+					sex: '女'
+				}, {
+					name: '陆地基',
+					sex: '女'
+				}, {
+					name: '章立',
+					sex: '女'
+				}, {
+					name: '程池',
 					sex: '女'
 				}],
 				columns: [{
 					field: 'name',
 					title: '姓名',
 					class: 'red',
+					align: 'left',
 					width: '100'
 				}, {
 					field: 'sex',
 					title: '性别',
-					width: '70'
+					width: '40',
+					align: 'center'
+				}, {
+					field: 'tel',
+					title: '电话',
+					width: '70',
+					align: 'center'
+				}, {
+					field: 'mobile',
+					title: '手机',
+					//width: '70',
+					align: 'center'
 				}]
 			});
 		</script>

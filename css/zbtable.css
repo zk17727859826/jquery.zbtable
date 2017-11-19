@@ -1,7 +1,105 @@
-.zbtable {
-	font-size: 12px;
+.zbtable-wrapper {
+	position: relative;
+	overflow: hidden;
 }
 
-.red {
-	color: red;
+.zbtable-wrapper-border {
+	border: solid 1px #C5C5C5;
+}
+
+.zbtable-wrapper .zbtable-header-wrapper,
+.zbtable-wrapper .zbtable-left-wrapper,
+.zbtable-wrapper .zbtable-fixed-wrapper,
+.zbtable-wrapper .zbtable-content-wrapper {
+	position: absolute;
+	background-color: #FFFFFF;
+	left: 0px;
+	top: 0px;
+}
+
+.zbtable-wrapper-border .zbtable-left-wrapper,
+.zbtable-wrapper-border .zbtable-fixed-wrapper,
+.zbtable-wrapper-border .zbtable-content-wrapper,
+.zbtable-wrapper-border .zbtable-header-wrapper {
+	left: -1px;
+	top: -1px;
+}
+
+.zbtable-wrapper .zbtable-header-wrapper {
+	overflow: hidden;
+}
+
+.zbtable-wrapper .zbtable-left-wrapper {
+	overflow: hidden;
+}
+
+.zbtable-wrapper .zbtable-fixed-wrapper {
+	overflow: hidden;
+}
+
+.zbtable-wrapper .zbtable-content-wrapper {
+	overflow: auto;
+}
+
+.zbtable-wrapper .zbtable {
+	font-size: 12px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.zbtable-wrapper .zbtable th {
+	border: solid 1px #C5C5C5;
+	padding: 3px;
+}
+
+.zbtable-wrapper .zbtable td {
+	border: solid 1px #c5c5c5;
+	padding: 3px;
+}
+
+.zbtable-wrapper .zbtable-pagin {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	height: 26px;
+	border: 1px solid #C5C5C5;
+	z-index: 1;
+	background-color: #ffffff;
+}
+
+.zbtable-wrapper-border .zbtable-pagin {
+	border-left: none;
+	border-bottom: none;
+	border-right: none;
+}
+
+.zbtable-wrapper .zbtable-pagin .zbtable-button-first,
+.zbtable-wrapper .zbtable-pagin .zbtable-button-prev,
+.zbtable-wrapper .zbtable-pagin .zbtable-button-next,
+.zbtable-wrapper .zbtable-pagin .zbtable-button-last {
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
+	text-align: center;
+	display: inline-block;
+	border: solid 1px #C5C5C5;
+	margin-left: 5px;
+	margin-top: 2px;
+	cursor: pointer;
+	color: blue;
+	font-size: smaller;
+}
+
+.zbtable-wrapper .zbtable-pagin .zbtable-page-current,
+.zbtable-wrapper .zbtable-pagin .zbtable-page-total {
+	display: inline-block;
+	min-width: 20px;
+	text-align: center;
+	border: solid 1px #fffff;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 2px;
 }
